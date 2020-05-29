@@ -1,0 +1,49 @@
+actions:
+- utter_greet
+- utter_leave_apply
+- utter_leave_count
+- utter_working_hours
+- utter_inform_name
+- utter_bye
+- utter_additional_help
+
+
+
+intents:
+- greet
+- leave_apply
+- leave_count
+- working_hours
+- inform_name
+- thanks
+- bye
+- assist_response
+
+entities:
+- name 
+
+slots: 
+    name:
+        type: text 
+        initial_value: "human"
+
+responses:
+  utter_greet:
+  - text: Hey! What can I do for you?
+  utter_leave_apply:
+  - text: Apply leave here
+  utter_leave_count:
+  - text: You have these 2 leaves left, {name}
+  utter_working_hours:
+  - text: you have an average of 7.5 working hours, {name}.
+  utter_additional_help:
+  - text: Can I help you with anything else, {name}?
+  utter_bye:
+  - text: Goodbye {name}!
+  utter_inform_name:
+  - text: What is your name?
+
+
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 0
