@@ -1,13 +1,11 @@
-language: "en"
-
+language: en
 pipeline: spacy_sklearn
-
 policies:
-  - name: TEDPolicy
-    epochs: 100
-    max_history: 5
-  - name: MemoizationPolicy
-    max_history: 5
-
-
-#    fallback_action_name: 'action_default_fallback'
+- name: TEDPolicy
+  epochs: 100
+  max_history: 5
+- name: MemoizationPolicy
+  max_history: 5
+session_config:
+  session_expiration_time: 10
+  carry_over_slots_to_new_session: false

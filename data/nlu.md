@@ -33,6 +33,9 @@
 - im [neha](name)
 - [Sanaaya](name)
 - [Gagan](name)
+- [sanjay patwardhan](name)
+- [gagan](name)
+- my name is gagandeep singh
 
 ## intent:working_hours
 - what are my working hours?
@@ -44,6 +47,8 @@
 - my working hours
 - display my working hours
 - what r my wrking hours?
+- find my working hours
+- what are my working hours
 
 ## intent:leave_count
 - how many leaves are left
